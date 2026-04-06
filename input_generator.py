@@ -2,6 +2,8 @@ import random
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
             'w', 'x', 'y', 'z']
 
+#k = number of letters, n = length of strings
+#randomly selects letters to use, constructs two strings randomly of length n given the randomly selected k letters
 def generate_input(k: int, n: int):
     if k > 26:
         raise ValueError('There are only 26 characters in the English alphabet.')

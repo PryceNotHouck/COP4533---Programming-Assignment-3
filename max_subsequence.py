@@ -1,7 +1,7 @@
 from collections import deque
 
 ex_characters = {'a': 2, 'b': 4, 'c': 5}
-ex_sequences = ['aacb', 'caab']
+ex_sequences = ['aacab', 'caab']
 
 # MAXIMUM SUBSTRING INTERPRETATION OF THE QUESTION:
 # def max_subsequence(characters: dict, sequences: list):
@@ -98,6 +98,8 @@ def max_subsequence(characters: dict, sequences: list):
     return max_value, max_sequence
 
 if __name__ == '__main__':
+    print(ex_characters)
+    print(ex_sequences)
     value, sequence = max_subsequence(ex_characters, ex_sequences)
     print(value)
     print(sequence)
