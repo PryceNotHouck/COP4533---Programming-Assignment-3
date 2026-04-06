@@ -1,0 +1,8 @@
+5
+a 1
+b 3
+c 4
+d 2
+e 5
+beaebddadbcbaacaeaaeaccbbeedeeadcbbbcacdeaddcdedbcaeeeaaaaebdebdaadeaaabedd
+baaabddddbaedcacdccdeeaedcbdecbcbaaedacaaeccabcaccceeeebcdeaeecdcdeaedacbbb
