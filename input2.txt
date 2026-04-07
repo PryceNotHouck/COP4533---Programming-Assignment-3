@@ -1,8 +1,0 @@
-5
-a 3
-b 1
-c 2
-d 5
-e 4
-cddcbccaddaebcccbcdaeaabcbeeccadddecccbdbcecdebdab
-eddbdaeecbeacddbaaaccdeedecdccebeaaeaaaabbeedaadde
