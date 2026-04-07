@@ -20,6 +20,7 @@ At each iteration, one of the following holds:
   $$OPT(i, 0) = 0, \quad OPT(0, j) = 0$$  
   because the maximum matching subsequence has value 0.
 
+$$
 OPT(i, j) =
 \begin{cases}
 0 & \text{if } i = 0 \text{ or } j = 0 \\
