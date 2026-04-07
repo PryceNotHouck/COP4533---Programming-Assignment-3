@@ -47,8 +47,6 @@ if __name__ == "__main__":
     plt.legend()
     plt.grid(True)
     plt.show()
-
-
     
     # #converts input_generator text into dictionary, list values
     # lines = text.strip().split("\n")
