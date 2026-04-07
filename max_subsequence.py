@@ -2,6 +2,10 @@ from collections import deque
 
 ex_characters = {'a': 2, 'b': 4, 'c': 5}
 ex_sequences = ['aacab', 'caab']
+#expected output:
+# 13
+# caab
+
 
 # MAXIMUM SUBSTRING INTERPRETATION OF THE QUESTION:
 # def max_subsequence(characters: dict, sequences: list):
