@@ -2,11 +2,31 @@ Pryce Houck (57790944)
 Trevor DeBord (40228131)
 
 Question 2:
-OPT[A,B] = 
+Define $OPT(i, j)$ as the highest value common subsequence between 
+$\{a_1, a_2, \dots, a_i \} \subseteq A$ and 
+$\{b_1, b_2, \dots, b_j \} \subseteq B$.
 
-0 if A = 0
-0 if B = 0
-max{OPT[...]}
+At each iteration, one of the following holds:
+
+- **Case 1:** $a_i = b_j$  
+  $\rightarrow$ This value is in the HVLCS, so add $v_{a_i}$ and recurse onto the next elements in either array:  
+  $$OPT(i, j) = v_{a_i} + OPT(i - 1, j - 1).$$
+
+- **Case 2:** $a_i \neq b_j$  
+  $\rightarrow$ This value is not in the HVLCS, so take the maximum of excluding either element:  
+  $$OPT(i, j) = \max\{OPT(i, j-1), OPT(i-1, j)\}.$$
+
+- **Base Cases:**  
+  $$OPT(i, 0) = 0, \quad OPT(0, j) = 0$$  
+  because the maximum matching subsequence has value 0.
+
+OPT(i, j) =
+\begin{cases}
+0 & \text{if } i = 0 \text{ or } j = 0 \\
+\max\{OPT(i - 1, j),\; OPT(i, j-1)\} & \text{if } a_i \neq b_j \\
+v_{a_i} + OPT(i - 1, j - 1) & \text{if } a_i = b_j
+\end{cases}
+$$
 
 
 Question 3:
