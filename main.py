@@ -19,7 +19,7 @@ if __name__ == "__main__":
         with open(filename, "w") as f:
             f.write(text)
             
-    #recoreds runtime for each nth input HVLCS
+    #records runtime for each nth input HVLCS
     runtimes = []
     for n in range(1,11):
         start_t = time.perf_counter()
