@@ -29,22 +29,23 @@ v_{a_i} + OPT(i - 1, j - 1) & \text{if } a_i = b_j
 \end{cases}
 $$
 
-
+```
 Question 3:
-Time complexity analysis of HVLCS A and B \\
-psuedocode: \\
-    helper func: \\
-    //runtime is O(n) for find(curr), where n = length of subsequence \\
-    def is_common(deq, sequence): \\
-        subsequence = sequence \\
-        while len(deq) != 0: \\
-            curr deq.popleft() \\
-            found = subsequence.find(curr) \\
-            if found != -1: \\
-                subsequence = subsequence[found:] \\ 
-            else: \\
-                return False \\
-        return True \\
+Time complexity analysis of HVLCS A and B
+psuedocode:
+    helper func:
+    //runtime is O(n) for find(curr), where n = length of subsequence
+    def is_common(deq, sequence):
+        subsequence = sequence
+        while len(deq) != 0:
+            curr deq.popleft()
+            found = subsequence.find(curr)
+            if found != -1:
+                subsequence = subsequence[found:]
+            else:
+                return False
+        return True
+```
 
     def max_subseq(char dict, seq list):
         str A
